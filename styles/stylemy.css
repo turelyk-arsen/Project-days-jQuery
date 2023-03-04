@@ -139,6 +139,82 @@ article h4 {
   background-color: #000aff;
 }
 
+/* messages  */
+#messages {
+  padding-bottom: 20px;
+}
+#messages article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #f1f2fa;
+  /* background-color: #bcbcff; */
+  padding: 0;
+  height: 100px;
+  border-bottom: 1px solid #00012223;
+  border-radius: 0px;
+}
+.notSeen {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  background: #ce78c5;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageNot {
+  width: 90px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #000aff;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#messages img {
+  height: 50px;
+  width: 50px;
+}
+#messages h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000122;
+}
+#messages p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000122;
+}
+#messages span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000122;
+  opacity: 0.5;
+}
+
 /* footer  */
 footer {
   position: fixed;
