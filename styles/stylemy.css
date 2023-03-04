@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #000122;
+  height: 100vh;
+}
+
+/* top  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+nav img:first-of-type {
+  /* width: 50%; */
+  height: 18px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* main  */
+
+body > div {
+  /* margin-top: 100px; */
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: #f1f2fa;
+  padding: 45px;
+  /* width: 100%; */
+}
+div h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+div button {
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+  padding: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000122;
+  opacity: 0.5;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+div button.selected {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000aff;
+}
+
+/* background-image: url(../images/goals/maserati.png); */
+
+section article {
+  width: 290px;
+  height: 180px;
+  background-color: #a5b0da;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+article h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+#prise {
+  padding: 0;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000aff;
+  /* padding: 0 20px; */
+}
+article h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000122;
+  opacity: 0.5;
+}
+
+#myProgress {
+  width: 130px;
+  background-color: #ddd;
+  opacity: 0.3;
+  margin-top: 10px;
+}
+
+#myBar {
+  height: 3px;
+  background-color: #000aff;
+}
+
+/* footer  */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 100px 30px #fff;
+}
+footer a {
+  padding: 30px;
+}
