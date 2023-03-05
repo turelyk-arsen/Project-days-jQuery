@@ -81,20 +81,17 @@ for (const messagesData of messagesArray) {
   cloneMessages.find("span").text(messagesData.date);
 
   if (messagesData.notSeen) {
-    cloneMessages.find("#notSeen").addClass('notSeen');
+    cloneMessages.find("#notSeen").addClass("notSeen");
     cloneMessages.find(".notSeen").text(messagesData.notSeen);
   }
 
   if (messagesData.picture) {
-      cloneMessages.find("img").attr("src", messagesData.picture);
+    cloneMessages.find("img").attr("src", messagesData.picture);
   } else {
     cloneMessages.find("img").remove();
     // cloneMessages.find("article>div").html('<p>' + messagesData.sender.slice(0,3)+'</p>');
-    cloneMessages.find('#imageNot').text(messagesData.sender.slice(0,3));
-    cloneMessages.find('#imageNot').addClass('imageNot');
-
-          console.log(messagesData.sender.slice(0,3))
-
+    cloneMessages.find("#imageNot").text(messagesData.sender.slice(0, 3));
+    cloneMessages.find("#imageNot").addClass("imageNot");
   }
 
   // clone.css("background-image", "url(" + userData.picture + ")");
@@ -104,3 +101,33 @@ for (const messagesData of messagesArray) {
 }
 // kill the model
 modelMessages.remove();
+
+/* Transactions  */
+$("#circle div").text(
+  new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(currentBalance)
+);
+
+const transaction = $("#category article");
+for (const userCategory of categoriesArray) {
+  const cloneTransaction = transaction.clone();
+  $("#category").append(cloneTransaction);
+
+  cloneTransaction.find("h3").text(userCategory.name);
+  cloneTransaction.find("img").attr("src", "/" + userCategory.icon);
+
+  cloneTransaction
+    .find("p")
+    .text(
+      new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(userCategory.total)
+    );
+}
+transaction.remove();
+
+$("#category article").eq(0).css("background-color", "#90E4A2");
+$("#category article").eq(1).css("background-color", "#8C90F5");
